@@ -7,7 +7,7 @@ int max_element(int array[], int n){
     }
     else{
         for(int i=0;i<n;i++){
-            if(max>array[i]){
+            if(max<array[i]){
                 max=array[i];
             }
         }
