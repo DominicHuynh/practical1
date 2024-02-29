@@ -3,7 +3,7 @@
 extern int array_sum(int array[], int n);
 int main(){
 
-    int array[0]={} ; 
-    std::cout << "The total is : "<< array_sum(array,0)<< std::endl;
+    int array[5]={1,2,3,4,5} ; 
+    std::cout << "The total is : "<< array_sum(array,5)<< std::endl;
     return 0;
 }
