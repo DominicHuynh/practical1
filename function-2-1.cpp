@@ -7,7 +7,7 @@ int min_element(int array[], int n){
     }
     else{
         for(int i=0;i<n;i++){
-            if(min<array[i]){
+            if(min>array[i]){
                 min=array[i];
             }
         }
