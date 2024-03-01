@@ -6,7 +6,7 @@ bool is_ascending(int array[], int n){
     }
     else{
         for(int i=0;i<n;i++){
-            if(array[i]>=array[i+1]){
+            if(array[i]<=array[i+1]){
                 return true;
             }
 
