@@ -1,4 +1,3 @@
-
 #include <unordered_map> // for std::unordered_map
 
 double weighted_average(int array[], int n) {
@@ -8,18 +7,18 @@ double weighted_average(int array[], int n) {
     }
 
     // Create a map to store the frequency of each distinct element
-    std::unordered_map<int, int> frequency_map;
+    std::unordered_map<int, int> frequencyMap;
 
     // Calculate the frequency of each distinct element in the array
     for (int i = 0; i < n; ++i) {
-        frequency_map[array[i]]++;
+        frequencyMap[array[i]]++;
     }
 
     // Calculate the weighted sum
-    double weighted_sum = 0.0;
-    for (const auto& pair : frequency_map) {
-        weighted_sum += static_cast<double>(pair.first * pair.second) / n;
+    double weightedSum = 0.0;
+    for (const auto& pair : frequencyMap) {
+        weightedSum += static_cast<double>(pair.first * pair.second) / n;
     }
 
-    return weighted_sum;
+    return weightedSum;
 }
